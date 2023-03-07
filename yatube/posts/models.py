@@ -8,7 +8,7 @@ class Group(models.Model):
     title = models.CharField(max_length=200)
     slug = models.SlugField(unique=True)
     description = models.TextField()
-    
+
     class Meta:
         verbose_name = 'Группа'
         verbose_name_plural = 'Группы'
@@ -34,7 +34,7 @@ class Post(models.Model):
         related_name='posts',
         verbose_name='Сообщество для публикации поста'
     )
-    
+
     class Meta:
         verbose_name = 'Пост'
         verbose_name_plural = 'Посты'
